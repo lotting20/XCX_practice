@@ -1,0 +1,66 @@
+@import '/pages/ttfw/style/class.wxss';
+.systemContainer{
+    text-align: center;
+}
+.outer-box1 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #00bbf2 20%, rgba(255, 255, 255, 0) 99%); 
+    padding-bottom: 2px;
+}
+.inner-box1 {
+    background: #fff;
+}
+.outer-box2 {
+    padding-bottom: 2px;
+}
+.outer-box2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* 加上margin的变化 */
+    margin: -4rpx;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #00bbf2 20%, rgba(255, 255, 255, 0) 99%)
+}
+.outer-box3 {
+    width: 400rpx;
+    height: 100rpx;
+    border: 4rpx solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /* 以向上箭头为基准，顺时针转动看deg */
+    /* 90deg从左到右、180deg从上到下、 270deg从右到左、360deg从下到上*/
+    background-image: linear-gradient(156.5deg, #FFF6F3 18.27%, #FFFFFF 69.97%),linear-gradient(90deg, #FBD2C6, #E7865C);
+}
+.line-item1 {
+    width: 600rpx;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100;
+}
+.line-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.item-left {
+    width: 28rpx;
+    height: 28rpx;
+    border: 1rpx solid #E7865C;
+    color: #FF6B14;
+    z-index: 999;
+    background: #FFE1D0;
+}
+.line-show::before {
+    content: ' ';
+    height: 100%;
+    background-color: #FFE1D0;
+    display: inline-block;
+    position: absolute;
+    top: 24rpx;
+    left: 14rpx;
+    width: 3rpx;
+  }

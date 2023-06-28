@@ -1,0 +1,9 @@
+<view class="cata_container">
+<view ><button bindtap="toCss" class="catalogue">1、css样式</button></view>
+<view ><button bindtap="toUpdate" class="catalogue">更新API</button></view>
+<view ><button bindtap="toLifeCycle" class="catalogue">小程序生命周期API</button></view>
+<view ><button bindtap="toEventApp" class="catalogue">应用级事件API</button></view>
+<view ><button bindtap="toDebug">调试、性能、分包下载、加密API</button></view>
+<view ><button bindtap="toRouter">路由API</button></view>
+<view ><button bindtap="toInterface">界面API</button></view>
+</view>

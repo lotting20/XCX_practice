@@ -1,0 +1,7 @@
+.cata_container{
+    width: 750rpx;
+    margin: auto;
+}
+.catalogue{
+    width: 750rpx;
+}
